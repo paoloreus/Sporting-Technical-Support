@@ -4,5 +4,4 @@
 # Paolo Tous - 101325245
 # Mondi Koci - 101282062
 # Yukina Ishiguro - 101274311
-# Chun-chen Lu - 101279412
-# Max Grossman - 101294134
+# Robertha Alvarez Diaz - 101236645
