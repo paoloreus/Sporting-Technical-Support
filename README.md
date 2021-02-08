@@ -5,3 +5,5 @@
 # Mondi Koci - 101282062
 # Yukina Ishiguro - 101274311
 # Robertha Alvarez Diaz - 101236645
+# Max Grossman - 101294134
+# Chun-chen Lu - 101279412
