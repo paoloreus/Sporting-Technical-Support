@@ -1,0 +1,17 @@
+﻿@model List<Product>
+@{
+    ViewBag.Title = "Products List";
+}
+
+<tbody>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.Name</td>
+            <td>
+                <a asp-controller="Product" asp-action="Edit" asp-route-id="@product.ProductId">Edit</a>
+                <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.ProductId">Delete</a>
+            </td>
+        </tr> <br />
+    }
+</tbody>

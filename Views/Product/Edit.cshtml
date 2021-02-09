@@ -1,0 +1,19 @@
+﻿@model Product
+@{
+    string title = ViewBag.Action + " Product";
+    ViewBag.Title = title;
+}
+
+<h2>@title</h2>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <input type="hidden" asp-for="ProductId" />
+    <button type="submit" class="btn-primary">@ViewBag.Action</button>
+    <a asp-controller="Product" asp-action="Index" class="btn-primary">Cancel</a>
+
+</form>
