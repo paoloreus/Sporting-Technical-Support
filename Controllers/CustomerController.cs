@@ -25,6 +25,13 @@ namespace Assig1ProtoType.Controllers
         }
 
         [HttpGet]
+        public IActionResult Add()
+        {
+            ViewBag.Action = "Add";
+            return View("Edit", new Customer());
+        }
+
+        [HttpGet]
         public IActionResult Edit(int id)
         {
             ViewBag.Action = "Edit";
@@ -35,10 +42,31 @@ namespace Assig1ProtoType.Controllers
         [HttpPost]
         public IActionResult Edit(Customer customer)
         {
-
-            context.Customers.Update(customer);
-            context.SaveChanges();
-            return RedirectToAction("Index", "Customer");
+            if (ModelState.IsValid)
+            {
+                if(customer.CustomerId == 0)
+                {
+                    context.Customers.Add(customer);
+                }
+                else
+                {
+                    context.Customers.Update(customer);
+                }
+                context.SaveChanges();
+                return RedirectToAction("Index", "Customer");
+            }
+            else
+            {
+                if(customer.CustomerId == 0)
+                {
+                    ViewBag.Action = "Add";
+                }
+                else
+                {
+                    ViewBag.Action = "Edit";
+                }
+                return View(customer);
+            }
         }
 
         [HttpGet]

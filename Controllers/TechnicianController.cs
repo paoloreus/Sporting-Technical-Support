@@ -25,6 +25,12 @@ namespace Assig1ProtoType.Controllers
         }
 
         [HttpGet]
+        public IActionResult Add()
+        {
+            ViewBag.Action = "Add";
+            return View("Edit", new Technician());
+        }
+        [HttpGet]
         public IActionResult Edit(int id)
         {
             ViewBag.Action = "Edit";
@@ -35,9 +41,31 @@ namespace Assig1ProtoType.Controllers
         [HttpPost]
         public IActionResult Edit(Technician technician)
         {
-            context.Technicians.Update(technician);
-            context.SaveChanges();
-            return RedirectToAction("Index", "Technician");
+            if (ModelState.IsValid)
+            {
+                if(technician.TechnicianId == 0)
+                {
+                    context.Technicians.Add(technician);
+                }
+                else
+                {
+                    context.Technicians.Update(technician);
+                }
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                if(technician.TechnicianId == 0)
+                {
+                    ViewBag.Action = "Add";
+                }
+                else
+                {
+                    ViewBag.Action = "Edit";
+                }
+                return View(technician);
+            }
         }
 
        

@@ -25,6 +25,15 @@ namespace Assig1ProtoType.Controllers
                 .ToList();
             return View(incidents);
         }
+        [HttpGet]
+        public IActionResult Add()
+        {
+            ViewBag.Action = "Add";
+            ViewBag.Customers = context.Customers.OrderBy(c => c.Name).ToList();
+            ViewBag.Products = context.Products.OrderBy(p => p.Name).ToList();
+            ViewBag.Technicians = context.Technicians.OrderBy(t => t.Name).ToList();
+            return View("Edit", new Incident());
+        }
 
         [HttpGet]
         public IActionResult Edit(int id)
@@ -40,9 +49,36 @@ namespace Assig1ProtoType.Controllers
         [HttpPost]
         public IActionResult Edit(Incident incident)
         {
-            context.Incidents.Update(incident);
-            context.SaveChanges();
-            return RedirectToAction("Index", "Incident");
+            if (ModelState.IsValid)
+            {
+                if(incident.IncidentId == 0)
+                {
+                    
+                    context.Incidents.Add(incident);
+
+                }
+                else
+                {
+                    context.Incidents.Update(incident);
+                }
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                if(incident.IncidentId == 0)
+                {
+                    ViewBag.Action = "Add";
+                }
+                else
+                {
+                    ViewBag.Action = "Edit";
+                }
+                ViewBag.Customers = context.Customers.OrderBy(c => c.Name).ToList();
+                ViewBag.Products = context.Products.OrderBy(p => p.Name).ToList();
+                ViewBag.Technicians = context.Technicians.OrderBy(t => t.Name).ToList();
+                return View(incident);
+            }
         }
     }
 }
