@@ -2,7 +2,7 @@
 # Please write your Student Name and ID below:
 
 # Paolo Tous - 101325245               paolo.tous@georgebrown.ca                             -> Assist Jim after completing the ProtoType.
-# Mondi Koci - 101282062                                                                     -> Initial Notes, Back-end and front-end validations
+# Mondi Koci - 101282062               mondi.koci@georgebrown.ca                             -> Initial Notes, Back-end and front-end validations
 # Yukina Ishiguro - 101274311                                                                -> Views and cool front-end stuff
 # Robertha Alvarez Diaz - 101236645    robertha.alvarezdiaz@georgebrown.ca                   -> Team up with Yukina for Views and design
        
