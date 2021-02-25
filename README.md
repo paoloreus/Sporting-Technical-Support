@@ -6,7 +6,7 @@
 # Yukina Ishiguro - 101274311              -> Views and cool front-end stuff
 # Robertha Alvarez Diaz - 101236645  robertha.alvarezdiaz@georgebrown.ca
        -> Team up with Yukina for Views and design
-# Max Grossman - 101294134                 -> UML Diagrams, Database design/modelling and adding dynamic elements to the front end work
+# Max Grossman - 101294134 - max.grossman2@georgebrown.ca                 -> UML Diagrams, Database design/modelling and adding dynamic elements to the front end work
 # Chun-chen Lu - 101279412                 -> Add/Delete features
 
 # Status so far: 
