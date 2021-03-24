@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers"
   ],
-  "SelectedNode": "\\GBCSporting2021_TheDevelopers.sln",
+  "SelectedNode": "\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

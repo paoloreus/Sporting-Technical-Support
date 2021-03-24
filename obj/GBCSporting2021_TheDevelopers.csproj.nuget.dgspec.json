@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OneDrive\\OneDrive - George Brown College\\Semester IV\\Courses\\Web Application Development\\Assignment-V2\\GBCSporting2021_TheDevelopers.csproj": {}
+    "C:\\Users\\Paolo\\source\\repos\\Sporting-Technical-SupportV2\\GBCSporting2021_TheDevelopers.csproj": {}
   },
   "projects": {
-    "C:\\OneDrive\\OneDrive - George Brown College\\Semester IV\\Courses\\Web Application Development\\Assignment-V2\\GBCSporting2021_TheDevelopers.csproj": {
+    "C:\\Users\\Paolo\\source\\repos\\Sporting-Technical-SupportV2\\GBCSporting2021_TheDevelopers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OneDrive\\OneDrive - George Brown College\\Semester IV\\Courses\\Web Application Development\\Assignment-V2\\GBCSporting2021_TheDevelopers.csproj",
+        "projectUniqueName": "C:\\Users\\Paolo\\source\\repos\\Sporting-Technical-SupportV2\\GBCSporting2021_TheDevelopers.csproj",
         "projectName": "GBCSporting2021_TheDevelopers",
-        "projectPath": "C:\\OneDrive\\OneDrive - George Brown College\\Semester IV\\Courses\\Web Application Development\\Assignment-V2\\GBCSporting2021_TheDevelopers.csproj",
-        "packagesPath": "C:\\Users\\Bristle\\.nuget\\packages\\",
-        "outputPath": "C:\\OneDrive\\OneDrive - George Brown College\\Semester IV\\Courses\\Web Application Development\\Assignment-V2\\obj\\",
+        "projectPath": "C:\\Users\\Paolo\\source\\repos\\Sporting-Technical-SupportV2\\GBCSporting2021_TheDevelopers.csproj",
+        "packagesPath": "C:\\Users\\Paolo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paolo\\source\\repos\\Sporting-Technical-SupportV2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bristle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Paolo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
