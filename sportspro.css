@@ -104,8 +104,8 @@ nav a:hover{
 }
 .addEditForm label{
     display: block;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 1px;
     font-size: 15px;
     color: rgb(154, 154, 154);
 }
@@ -121,6 +121,7 @@ nav a:hover{
     border: 1px solid rgb(67, 67, 67);
     outline: none;
     transition: 0.5s;
+    background-color: rgb(255, 255, 255);
 }
 .fBtn{
     box-sizing: border-box;
@@ -135,6 +136,7 @@ nav a:hover{
     color: white;
     cursor: pointer;
     text-decoration: none;
+    width: 100%;
 }
 .fBtn:hover{
     color: rgb(0, 0, 0);
@@ -149,6 +151,26 @@ nav a:hover{
     background-color: rgb(67, 67, 67);
     color: white;
     transition: 0.1s;
+}
+.cancelB{
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: 'Gruppo', cursive;
+    font-size: 15px;
+    color: rgb(67, 67, 67);
+    text-decoration: underline;
+    border-radius: 2px;
+}
+.cancelB:hover{
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    color: rgb(165, 42, 42);
+    background-color: rgba(165, 42, 42, 0.1);
+    text-decoration: none;
+    transition: 0.5s;
 }
 
 /* DELETE */
