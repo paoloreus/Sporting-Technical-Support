@@ -193,20 +193,25 @@ nav a:hover{
 #rc_a{
     padding-right: 5px;
 }
-#products_registration{
+.products_registration{
     width: 100%;
+    
 }
-#products_registration:focus{
-    border: 1.5px solid rgb(67, 67, 67);
+.products_registration:focus{
+    border: 1px solid rgb(67, 67, 67);
     outline: none;
     transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
-#products_registration select{
-    padding: 10px;
+.products_registration select{
+    padding: 15px;
+    border: 1px solid rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240);
 }
 select:required:invalid {
-    color: rgb(202, 202, 202);
-  }
+    color: rgb(160, 160, 160);
+}
 
 /* TABLE */
 #addNewBtn{
