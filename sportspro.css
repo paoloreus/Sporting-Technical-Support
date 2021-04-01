@@ -203,13 +203,12 @@ nav a:hover{
 
 /* ROBII */
 #addNewBtn{
-    text-align: right;
-    padding-right: 6px;
+    text-align: center;
 }
 .font{
     font-family: 'Gruppo', cursive;
-    color: white;
-    background-color: rgb(112, 112, 112);
+    color: rgb(154, 154, 154);
+    font-size: 13px;
 }
 .table-wrapper {
     margin: 30px auto;
@@ -233,7 +232,8 @@ table.table {
     table-layout: fixed;
 }
 table.table tr th, table.table tr td {
-    border-color: rgb(240, 240, 240);
+    border: none;
+    padding: 20px 10px 15px 10px;
 }
 table.table th i {
     font-size: 13px;
@@ -249,9 +249,6 @@ table.table td a {
     margin: 0 5px;
     min-width: 24px;
 }    
-table.table td a.add {
-    color: #3d3c3c;
-}
 table.table td a.edit {
     color: #3d3c3c;
 }
@@ -261,12 +258,6 @@ table.table td a.delete {
 table.table td i {
     font-size: 19px;
 }
-table.table td a.add i {
-    font-size: 24px;
-    margin-right: -1px;
-    position: relative;
-    top: 3px;
-}    
 table.table .form-control {
     height: 32px;
     line-height: 32px;
@@ -278,4 +269,10 @@ table.table .form-control.error {
 }
 table.table td .add {
     display: none;
+}
+tbody tr:nth-child(odd) {
+    background-color: rgb(240, 240, 240);
+}
+table thead{
+    border-bottom: 1px solid rgb(154, 154, 154);
 }
