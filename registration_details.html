@@ -43,7 +43,8 @@
                 <div class="container">
                     <div id="registration_product_table">
                         <h2 class="subHeading">Registrations</h2>
-                        <p id="registration_customerName">Customer: John Doe</p> <!-- Dynamic Name -->
+                        <p class="registration_customerName" id="rc_a">Customer:</p>
+                        <p class="registration_customerName" id="rc_b">John Doe </p> <!-- Dynamic Name -->
                         <table class="table"> <!-- Dynamic Product Table -->
                             <thead>
                                 <tr>
@@ -74,9 +75,10 @@
                     <div id="registration_product_dropdown">
                         <h2 class="subHeading">Product</h2>
                         <form id="products_registration" action=""> <!-- Dynamic Product Dropdown -->
-                            <select name="products_registration" id="products_registration">
-                              <option value="">Product 1</option>
-                              <option value="">Product 2</option>
+                            <select name="products_registration" id="products_registration" required>
+                                <option value="" disabled selected>Select product</option>
+                                <option value="">Product 1</option>
+                                <option value="">Product 2</option>
                             </select>
                             <input class="fBtn" type="submit" value="Register"> <!-- type double check -->
                           </form>
