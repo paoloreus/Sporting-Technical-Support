@@ -109,13 +109,7 @@ nav a:hover{
     font-size: 15px;
     color: rgb(154, 154, 154);
 }
-.form_input_error_message{
-    display: inline;
-    color: brown;
-    font-size: 12px;
-    text-decoration: none;
-}
-.addEditForm input{
+.addEditForm input, .addEditForm_dd{
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -129,6 +123,13 @@ nav a:hover{
     transition: 0.5s;
     background-color: rgb(255, 255, 255);
 }
+.addEditForm_dd:focus{
+    border: 1px solid rgb(67, 67, 67);
+    outline: none;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+}
+
 .fBtn{
     box-sizing: border-box;
     padding: 10px;
@@ -331,9 +332,28 @@ table{
     border-radius: 2px;
 }
 
-/* DROPDOWN ERROR MESSAGES */
-.dd_error_message{
+/*  ERROR HANDLING  */
+.dd_error_message, .table_empty_message{
     color: brown;
     font-size: 12px;
     text-decoration: none;
+}
+.form_input_error_message{
+    display: inline;
+    color: brown;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* For backend: Please use this class for instruction page11: 
+   Add custom CSS that uses a different border and background
+   for the <input> elements that contain invalid data */
+.error_input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid brown;
+    outline: none;
+    background-color: rgba(165, 42, 42, 0.1)
 }
