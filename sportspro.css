@@ -109,13 +109,14 @@ nav a:hover{
     font-size: 15px;
     color: rgb(154, 154, 154);
 }
-.addEditForm input, .addEditForm_dd{
+.addEditForm input, .addEditForm_dd, .addEditForm textarea{
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
     border-radius: 2px;
     border: 1px solid rgb(240, 240, 240);
     background-color: rgb(240, 240, 240);
+    resize: none;
 }
 .addEditForm input:focus{
     border: 1px solid rgb(67, 67, 67);
@@ -129,7 +130,28 @@ nav a:hover{
     transition: 0.5s;
     background-color: rgb(255, 255, 255);
 }
-
+.addEditForm textarea:focus{
+    border: 1px solid rgb(67, 67, 67);
+    outline: none;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% auto;
+    margin-bottom: 30px;
+}
+.grid-item {
+    padding: 10px 0;
+}
+.ed_label{
+    font-size: 15px;
+    color: rgb(154, 154, 154);
+}
+.ed_info{
+    font-size: 15px;
+    color: black;
+}
 .fBtn{
     box-sizing: border-box;
     padding: 10px;
