@@ -173,6 +173,35 @@ nav a:hover{
     transition: 0.5s;
 }
 
+/* UPDATE INCIDENT */
+.stb{
+    display: block;
+    text-align: center;
+}
+
+/* INCIDENT MANAGER */
+#Incident_filter{
+    margin-top: 20px;
+}
+.ifb{
+    display: inline-block;
+    padding: 10px;
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0);
+
+}
+.ifb:hover{
+    color: black;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.selected{
+    color: black;
+    font-weight: bold;
+    border-bottom: 1.5px solid rgb(196, 238, 248);
+}
+
 /* DELETE */
 #deleteMessage{
     margin: 50px 0 20px 0;
@@ -294,4 +323,9 @@ table thead{
 }
 table{
     border-radius: 2px;
+}
+
+/* ERROR MESSAGES */
+.dd_error_message{
+    color: brown;
 }

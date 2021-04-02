@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Registration | SportsPro</title> 
+    <title>Update Incident | SportsPro</title> 
 </head>
 <body>
     <div class="wrap">
@@ -26,7 +26,7 @@
                         <a href="techmanager.html">Technicians</a>
                         <a href="custmanager.html">Customers</a>
                         <a href="incidentmanager.html">Incidents</a>
-                        <a href="registration.html" class="navFocus">Registrations</a>
+                        <a href="registration.html">Registrations</a>
                         <a href="about.html">About</a>
                     </nav>
                 </div>
@@ -35,26 +35,21 @@
         <main>
             <div id="top">
                 <div class="container">
-                    <h1>Registration</h1> 
-                    <p>Please select a customer from the drop-down menu to register</p> 
+                    <h1>Update Incident</h1> 
+                    <p>Please select a technician from the drop-down menu to update incident</p> 
                 </div>
             </div>
             <div class="mainContents">
                 <div class="container">
-                    <h2 class="subHeading">Registration information</h2>
-                    <div id="registration_product_dropdown">
-                        <form class="products_registration" action=""> <!-- Dynamic Product Dropdown -->
-                            <p class="dd_error_message">(error text place holder >) *Please select a customer from the dropdown list below.</p><!-- Dropdown error message placeholder (pls fix the text on when integrating!)-->
+                    <h2 class="subHeading">Technician / Update Incident</h2>
+                    <div id="update_incident_technician_dropdown">
+                        <form class="update_incident_technician products_registration" action=""> <!-- Dynamic Product Dropdown -->
+                            <p class="dd_error_message">(error text place holder >) *Please select a technician from the dropdown list below.</p><!-- Dropdown error message placeholder (pls fix the text on when integrating!)-->
                             <select name="products_registration" class="products_registration" required>
-                                <option value="" disabled selected>Select customer</option>
+                                <option value="" disabled selected>Select technician</option>
                                 <option value="">Usagi Tsukino</option>
                                 <option value="">Seiya Kou</option>
                                 <option value="">Mamoru Chiba</option>
-                                <option value="">Chibi Chibi</option>
-                                <option value="">Ami Mizuno</option>
-                                <option value="">Rei Hino</option>
-                                <option value="">Makoto Kino</option>
-                                <option value="">Minako Aino</option> 
                             </select>
                             <input class="fBtn" type="submit" value="Select"> <!-- input type double check -->
                           </form>
