@@ -42,21 +42,25 @@
             <div class="mainContents">
                 <div class="container">
                     <form class="addEditForm" asp-action="" method="">
-                        <h2 class="subHeading">Product information</h2>
+                        <h2 class="subHeading">Product information</h2> <!-- for Back end: Please modify error message placeholders -->
                         <div>
                             <label asp-for="">Code</label>
+                            <p class="form_input_error_message">*error message</p> <!-- error text placeholder-->
                             <input asp-for="" />
                         </div>
                         <div>
                             <label asp-for="">Name</label>
+                            <p class="form_input_error_message">*error message</p> <!-- error text placeholder-->
                             <input asp-for="" />
                         </div>
                         <div>
                             <label asp-for="">Yearly Price</label>
+                            <p class="form_input_error_message">*error message</p> <!-- error text placeholder-->
                             <input asp-for="" />
                         </div>
                         <div>
                             <label asp-for="">Release Date</label>
+                            <p class="form_input_error_message">*error message</p> <!-- error text placeholder-->
                             <input asp-for="" />
                         </div>
                         <div>

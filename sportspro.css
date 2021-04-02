@@ -103,11 +103,17 @@ nav a:hover{
     margin: 0 auto;
 }
 .addEditForm label{
-    display: block;
     padding-top: 10px;
     padding-bottom: 1px;
+    margin-right: 15px;
     font-size: 15px;
     color: rgb(154, 154, 154);
+}
+.form_input_error_message{
+    display: inline;
+    color: brown;
+    font-size: 12px;
+    text-decoration: none;
 }
 .addEditForm input{
     width: 100%;
@@ -325,7 +331,9 @@ table{
     border-radius: 2px;
 }
 
-/* ERROR MESSAGES */
+/* DROPDOWN ERROR MESSAGES */
 .dd_error_message{
     color: brown;
+    font-size: 12px;
+    text-decoration: none;
 }
